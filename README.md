@@ -1,52 +1,16 @@
-VideoStream Pro - MERN Stack Video Processing App
+# React + Vite
 
-A full-stack application that allows users to upload videos, processes them asynchronously (simulated AI analysis), and streams them back using efficient chunk-based delivery.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🚀 Features
-- **User Authentication:** Secure Login & Registration (JWT).
-- **Video Upload:** Drag-and-drop upload to local server storage.
-- **Real-Time Processing:** Socket.io updates for "Processing" status bars.
-- **Smart Streaming:** Supports HTTP Range Requests (scrubbing/seeking works).
-- **Dashboard:** View, track, and play personal video library.
+Currently, two official plugins are available:
 
-## 🛠️ Tech Stack
-- **Frontend:** React + Vite, Tailwind CSS
-- **Backend:** Node.js, Express
-- **Database:** MongoDB (Mongoose)
-- **Real-Time:** Socket.io
-- **Storage:** Local Disk Storage (Multer)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## ⚙️ Installation & Run Guide
+## React Compiler
 
-### 1. Backend Setup
-```bash
-cd backend
-npm install
-# Create a .env file with:
-# MONGO_URI=your_mongodb_connection_string
-# JWT_SECRET=your_secret_key
-# PORT=5000
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-# Start the Server
-npm start
-2. Frontend Setup
-Bash
+## Expanding the ESLint configuration
 
-cd frontend
-npm install
-npm run dev
-3. Usage
-Open http://localhost:5173.
-
-Register a new account.
-
-Upload a video file (MP4).
-
-Watch the real-time progress bar.
-
-Once "Safe", click Watch Video to stream.
-
-📂 Project Structure
-/backend: API, Database models, and Video Streaming logic.
-
-/frontend: React UI, Video Player component, and Authentication.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

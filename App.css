@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffffff; /* White text */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.app {
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Make the video responsive (it shrinks on small screens) */
+video {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Nice shadow */
+}
